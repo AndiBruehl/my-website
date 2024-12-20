@@ -1,0 +1,161 @@
+.AllInOne-root {
+  font-family: "Montserrat", sans-serif;
+  padding: 2rem 5%;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.AllInOne-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.AllInOne-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.AllInOne-section {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.AllInOne-MainSection {
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left !important;
+}
+
+.AllInOne-section h2 {
+  font-size: 2.2rem;
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.AllInOne-section h2,
+.AllInOne-section h3,
+.AllInOne-section p {
+  text-align: left !important;
+}
+
+.AllInOne-section p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.AllInOne-section img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.callToAction {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.callToAction h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.callToAction img {
+  max-width: 90%;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .AllInOne-root {
+    padding: 2rem 3%;
+  }
+
+  .AllInOne-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .AllInOne-section {
+    padding: 1.5rem;
+  }
+
+  .AllInOne-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .AllInOne-section p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+
+  .callToAction h2 {
+    font-size: 2rem;
+  }
+
+  .callToAction img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .AllInOne-root {
+    padding: 1.5rem 2%;
+  }
+
+  .AllInOne-header h1 {
+    font-size: 2rem;
+  }
+
+  .AllInOne-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .AllInOne-section p {
+    font-size: 1.2rem;
+  }
+
+  .callToAction h2 {
+    font-size: 1.8rem;
+  }
+
+  .callToAction img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .AllInOne-root {
+    padding: 1rem 1.5%;
+  }
+
+  .AllInOne-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .AllInOne-section {
+    padding: 1rem;
+  }
+
+  .AllInOne-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .AllInOne-section p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .callToAction h2 {
+    font-size: 1.5rem;
+  }
+
+  .callToAction img {
+    max-width: 95%;
+  }
+}

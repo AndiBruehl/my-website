@@ -1,0 +1,171 @@
+.container {
+  margin: 0 auto;
+  background-color: #363a40;
+  color: white;
+  min-width: 85%;
+}
+
+.dev1 {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.textContent {
+  max-width: 50%;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.textContent p {
+  margin-bottom: 1.5rem;
+}
+
+.textContent h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.dynamicContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2% 0;
+  height: 450px;
+}
+
+.dynamicContent h2 {
+  font-size: 2rem;
+}
+
+.dynamicContent p {
+  font-size: 1.6rem;
+}
+
+.imageContent img {
+  max-width: 100%;
+  height: auto;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2%;
+}
+
+.transparentButton {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.transparentButton.active {
+  color: red;
+  font-weight: bold;
+  border-bottom: 2px solid red;
+}
+
+.transparentButton:hover {
+  font-size: 2rem;
+  color: #e74c3c;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  background: #d62d20;
+  scale: (1.2);
+}
+
+.frameworks-img {
+  width: 65vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 3rem 1rem;
+  }
+
+  .dev1 {
+    flex-direction: column;
+    padding: 3%;
+  }
+
+  .textContent {
+    max-width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .dynamicContent {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .dynamicContent h2 {
+    font-size: 1.8rem;
+  }
+
+  .dynamicContent p {
+    font-size: 1.4rem;
+  }
+
+  .imageContent img {
+    max-width: 100%;
+  }
+
+  .frameworks-img {
+    width: 90vw;
+    padding: 3%;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    margin-top: 2%;
+  }
+
+  .transparentButton {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 8px 16px;
+  }
+}

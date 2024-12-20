@@ -1,0 +1,221 @@
+.consulting-root {
+  padding: 2rem 5%;
+  color: #fff;
+}
+
+.consulting-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.consulting-header h1 {
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.consulting-header img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.consulting-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.consulting-content {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-left: 5%;
+  text-align: left;
+}
+
+.consulting-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: left !important;
+}
+
+.consulting-content p {
+  margin-bottom: 1.2rem;
+}
+
+.consulting-content ul {
+  list-style-type: disc;
+  text-align: left;
+  margin: 2%;
+  margin-left: 7%;
+  max-width: 90%;
+}
+
+.consulting-content li {
+  margin-bottom: 0.8rem;
+}
+
+.consulting-image {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consulting-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.pricing-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-left: 5%;
+  text-align: left;
+}
+
+.pricing-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: left !important;
+}
+
+.pricing-section p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.pricing-section ul {
+  list-style-type: disc;
+  text-align: left;
+  margin: 2%;
+  margin-left: 5%;
+  max-width: 90%;
+}
+
+.pricing-section li {
+  margin-bottom: 0.8rem;
+}
+
+.call-to-action img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInEffect 0.8s ease-out forwards;
+}
+
+@keyframes fadeInEffect {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .consulting-root {
+    padding: 2rem 4%;
+  }
+
+  .consulting-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3%;
+  }
+
+  .consulting-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .consulting-content {
+    font-size: 1.2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .consulting-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .consulting-content ul {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .consulting-image img {
+    max-width: 80%;
+  }
+
+  .pricing-section {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .pricing-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .pricing-section p {
+    font-size: 1.4rem;
+  }
+
+  .pricing-section ul {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .call-to-action img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .consulting-header h1 {
+    font-size: 2rem;
+  }
+
+  .consulting-content {
+    font-size: 1.1rem;
+  }
+
+  .pricing-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .pricing-section p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .consulting-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .consulting-content {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .pricing-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .pricing-section p {
+    font-size: 1.1rem;
+  }
+}

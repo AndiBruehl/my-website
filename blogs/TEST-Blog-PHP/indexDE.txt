@@ -1,0 +1,6 @@
+<h2>Firewall-Migration: MikroTik als kosteneffiziente Alternative</h2>
+<p>Neben Softwareentwicklung und Datenschutz bieten wir bekanntlich auch IT-Security und damit zusammenhängende Dienstleistungen an. Heute berichten wir über die Umstellung der Firewall eines Kunden.</p>
+<h2>Ausgangslage</h2>
+<p>Bislang haben wir bei Kunden als Firewall in der Regel Hardware von <em>Sophos</em>, vornehmlich die Serien <em>XG</em> und <em>XGS</em>, verbaut. <em>Sophos</em> baut unserer Erfahrung nach zuverlässige Hardware zu einem durchaus akzeptablen Preis.</p>
+<h2>Fazit</h2>
+<p>Die Migration auf MikroTik-Hardware verlief erfolgreich. Unser Kunde ist mit der neuen Firewall sehr zufrieden, und wir konnten die Downtime auf nur 15 Minuten reduzieren.</p>

@@ -1,0 +1,6 @@
+<h2>Firewall Migration: MikroTik as a Cost-Effective Alternative</h2>
+<p>In addition to software development and data protection, we also offer IT security and related services. Today, we report on the migration of a customer's firewall.</p>
+<h2>Initial Situation</h2>
+<p>For customers, we have typically deployed hardware firewalls from <em>Sophos</em>, primarily the <em>XG</em> and <em>XGS</em> series. Based on our experience, <em>Sophos</em> builds reliable hardware at a reasonable price.</p>
+<h2>Conclusion</h2>
+<p>The migration to MikroTik hardware was successful. Our customer is very satisfied with the new firewall, and we managed to reduce the downtime to just 15 minutes.</p>

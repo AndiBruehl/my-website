@@ -1,0 +1,150 @@
+.about {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.page-header h1 {
+  text-align: center;
+  margin: 2% 0;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2%;
+}
+
+.logo img,
+.image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.text {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding-top: 5%;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card img:hover {
+  z-index: 2;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-image {
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.team-section {
+  margin-top: 5%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.team-section h2 {
+  text-align: center;
+}
+
+.team-section .card-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+@media (max-width: 1024px) {
+  .about {
+    width: 90%;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 0;
+  }
+
+  .logo img,
+  .image img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .text {
+    padding: 0 10px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card img {
+    max-width: 300px;
+  }
+
+  .footer-image {
+    max-width: 100%;
+  }
+
+  .team-section {
+    margin-top: 10%;
+  }
+
+  .team-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .team-section .card-img {
+    max-width: 90%;
+  }
+
+  .fade-in {
+    transform: translateY(10px);
+  }
+}

@@ -1,0 +1,172 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.content-root {
+  min-width: 70%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.hero-section {
+  text-align: center;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px !important;
+  padding: 2% 0;
+  display: block;
+}
+.hero-section {
+  overflow: visible;
+}
+
+.hero-section h1 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hero-section h3 {
+  color: #d3d3d3;
+  text-align: left !important;
+}
+
+.solutions,
+.benefits {
+  padding: 40px 20px;
+}
+
+.solutions h2,
+.benefits h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: left !important;
+}
+
+.solutions ul,
+.benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.solutions li,
+.benefits li {
+  margin-bottom: 15px;
+  color: #d3d3d3;
+  font-size: 1.5rem;
+}
+
+.solutions li strong,
+.benefits li strong {
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.cta-section {
+  color: #000;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left !important;
+}
+
+.cta-section p {
+  font-size: 1rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  margin: 5%;
+}
+
+.cta-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e74c3c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  color: #fff;
+  background-color: red;
+}
+
+.tech-stacks {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 20px 0;
+  color: #d3d3d3;
+}
+
+.tech-stacks .highlight {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.footer-image {
+  min-width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .solutions h2,
+  .benefits h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-root {
+    padding: 0 10px;
+  }
+
+  .hero-section {
+    padding: 40px 10px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

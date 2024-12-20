@@ -1,0 +1,246 @@
+@import url("./NavBar.css");
+@import url("./about.css");
+@import url("./contact.css");
+@import url("./consulting.css");
+@import url("./styles.css");
+@import url("./button.css");
+@import url("./contactButton.css");
+@import url("./secaas.css");
+@import url("./vulnerability.css");
+@import url("./allinone.css");
+@import url("./veribill.css");
+@import url("./supervisor.css");
+@import url("./saas.css");
+@import url("./dev.css");
+@import url("./faceage.css");
+@import url("./terms.css");
+@import url("./imprint.css");
+@import url("./privacyaas.css");
+@import url("./privacy.css");
+@import url("./footer.css");
+
+body {
+  padding-top: 5%;
+  background-color: #363a40;
+  color: white;
+
+  line-height: 1.6;
+}
+
+.header-img {
+  border-radius: 10px;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: none;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 1%;
+  font-size: 3rem;
+  color: #e74c3c;
+}
+
+.feedback-section h2 {
+  text-align: center;
+}
+
+.rightCorner {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.NavBar .Navigation .dropdown-link::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  margin-left: 10px;
+  transition: transform 0.3s ease, border-top-color 0.3s ease;
+}
+
+.NavBar .Navigation .dropdown-link:hover::after {
+  border-top-color: transparent;
+  border-bottom: 5px solid white;
+  transform: rotate(360deg);
+}
+
+.MobileNavigationContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  z-index: 1001;
+}
+
+.menu-icon .navicon {
+  background: #fff;
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+  content: "";
+  background: #fff;
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  transition: all 0.2s ease;
+}
+
+.menu-icon .navicon:before {
+  transform: translateY(-8px);
+}
+
+.menu-icon .navicon:after {
+  transform: translateY(8px);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.menu li {
+  border-bottom: 1px solid #555;
+}
+
+.menu li a {
+  color: #363a40;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #e74c3c;
+  background-color: #fff;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu-btn:checked ~ .menu {
+  display: flex;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .menu {
+  display: flex;
+}
+
+.LanguageContainer {
+  color: #363a40;
+}
+
+.button:hover {
+  background-color: red;
+}
+
+.imprint-container,
+.privacy-container,
+.terms-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #a9a9a9;
+  padding: 3rem;
+  border-radius: 8px;
+  text-align: left;
+  line-height: 1.8;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.languageUrl li:hover {
+  color: #e74c3c;
+}
+
+@media (min-width: 1024px) {
+  .MobileNavigationContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding-top: 15%;
+  }
+
+  .DesktopNavigationContainer {
+    display: none;
+  }
+
+  .LanguageContainer {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .imprint-container,
+  .privacy-container,
+  .terms-container {
+    width: 80%;
+    padding: 2rem;
+  }
+}
